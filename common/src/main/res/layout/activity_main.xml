@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.common.MainActivityBase">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_MTV_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_SIV_Logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logo"
+        >
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_RV_Menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_below="@id/main_MTV_header"
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
